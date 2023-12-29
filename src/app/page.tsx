@@ -1,6 +1,10 @@
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+'use client'
+import { Button } from '@/components/ui/button'
 
 export default function Home() {
-  return <Button>Tickup</Button>;
+    return (
+        <div className="tw-w-full">
+            <Button onClick={() => alert('Hello')}>Tickme</Button>
+        </div>
+    )
 }
